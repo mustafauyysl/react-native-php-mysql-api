@@ -8,7 +8,7 @@ import { FlatList } from 'react-native-gesture-handler';
 import CommentContainer from '../components/CommentContainer';
 
 const ProductDetailScreen = props => {
-    const link = 'http://mustafauysal.com.tr/locally/images/';
+    const link = 'host';
     const imgUrl = props.contentDetail.content_img;
     const url = link + imgUrl
 

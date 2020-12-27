@@ -6,7 +6,7 @@ export function getPlaceSuccess(places) {
   
 export function getPlace() {
   return function (dispatch) {
-    let url = "http://mustafauysal.com.tr/locally/view_place.php";
+    let url = "host";
     return fetch(url)
       .then((response) => response.json())
       .then((result) => dispatch(getPlaceSuccess(result)));

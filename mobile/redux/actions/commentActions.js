@@ -6,7 +6,7 @@ export function getCommentSuccess(comment) {
   
 export function getComment(contentId) {
   return function (dispatch) {
-    let url = "http://mustafauysal.com.tr/locally/view_comment.php";
+    let url = "host";
     return fetch(url, {
         method: 'POST',
         headers :{

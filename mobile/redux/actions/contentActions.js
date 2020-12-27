@@ -6,7 +6,7 @@ export function getContentSuccess(content) {
   
 export function getContent(category, placeId) {
   return function (dispatch) {
-    let url = "http://mustafauysal.com.tr/locally/view_content.php";
+    let url = "host";
     return fetch(url, {
         method: 'POST',
         headers :{
@@ -29,7 +29,7 @@ export function selectContentSuccess(content) {
 
 export function selectContent(contentId) {
   return function (dispatch) {
-    let url = "http://mustafauysal.com.tr/locally/view_content_detail.php";
+    let url = "host";
     return fetch(url, {
         method: 'POST',
         headers :{
