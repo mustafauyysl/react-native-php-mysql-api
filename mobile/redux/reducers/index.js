@@ -8,13 +8,13 @@ import commentListReducer from './commentListReducer';
 import topsListReducer from './topsListReducer';
 
 const rootReducer = combineReducers({
-    selectCategoryReducer,
-    placesListReducer,
-    selectPlaceReducer,
-    contentListReducer,
-    selectContentReducer,
-    commentListReducer,
-    topsListReducer
-})
+  selectCategoryReducer,
+  placesListReducer,
+  selectPlaceReducer,
+  contentListReducer,
+  selectContentReducer,
+  commentListReducer,
+  topsListReducer,
+});
 
 export default rootReducer;

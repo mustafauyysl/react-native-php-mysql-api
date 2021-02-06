@@ -1,9 +1,9 @@
 export default {
-    selectedCategory: {},
-    places: [],
-    selectedPlace: {},
-    content: [],
-    selectedContent: [],
-    comment: [],
-    tops: []
-}
+  selectedCategory: {},
+  places: [],
+  selectedPlace: {},
+  content: [],
+  selectedContent: [],
+  comment: [],
+  tops: [],
+};

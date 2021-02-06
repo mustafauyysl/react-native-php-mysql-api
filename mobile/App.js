@@ -4,39 +4,33 @@ import configureStore from './redux/reducers/configureStore';
 import {Provider} from 'react-redux';
 import SplashScreen from 'react-native-splash-screen';
 import NoInternetScreen from './screens/NoInternetScreen';
-import NetInfo from "@react-native-community/netinfo";
+import NetInfo from '@react-native-community/netinfo';
 
 const store = configureStore();
 
 const App = () => {
-  const [internet, checkInternet] = useState(true)
+  const [internet, checkInternet] = useState(true);
 
   useEffect(() => {
-    NetInfo.addEventListener(state => {
-      checkInternet(state.isConnected)
+    NetInfo.addEventListener((state) => {
+      checkInternet(state.isConnected);
     });
-    SplashScreen.hide()
-  })
+    SplashScreen.hide();
+  });
 
   const renderNoInternet = () => {
-    return (
-      <NoInternetScreen />
-    )
-  }
+    return <NoInternetScreen />;
+  };
 
   const renderContainer = () => {
-    return(
+    return (
       <Provider store={store}>
-          <MainNavigator />
+        <MainNavigator />
       </Provider>
-    )
-  }
+    );
+  };
 
-  return (
-    internet ? renderContainer() : renderNoInternet()
-  )
+  return internet ? renderContainer() : renderNoInternet();
 };
-
-
 
 export default App;

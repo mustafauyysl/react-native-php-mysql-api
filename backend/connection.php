@@ -4,4 +4,3 @@
     if(!$link) {
         echo "connection error";
     }
-?>
